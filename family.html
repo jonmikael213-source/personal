@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree - Jhon Michael B. Pagulayan</title>
+    <link rel="icon" href="iconall.png">
+
+    <style>
+        html {
+            scrollbar-gutter: stable;
+            overflow-y: overlay;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #1d2f49;
+            background-color: #ffffff;
+            overflow-y: scroll;
+        }
+
+        header {
+            border-bottom: 5px solid #0879cf;
+        }
+
+        nav {
+            width: 85%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: #0879cf;
+            font-size: 22px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #405573;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        nav a:hover { color: #cf0808; }
+
+        .heading {
+            background-color: #f4f9ff;
+            padding: 10px 7%;
+            text-align: center;
+        }
+
+        .heading h1 {
+            color: #0879cf;
+            font-size: 45px;
+            margin: 0;
+        }
+
+        .heading p {
+            color: #526987;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        .container h2 {
+            color: #0879cf;
+            font-size: 28px;
+        }
+
+        .family {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .family-card {
+            border: 1px solid #dce8f5;
+            border-radius: 7px;
+            padding: 22px;
+            text-align: center;
+        }
+
+        .family-card:hover {
+            box-shadow: 0 5px 15px #dce8f5;
+        }
+
+        .icon {
+            background-color: #e5f2ff;
+            color: #0879cf;
+            width: 55px;
+            height: 55px;
+            margin: auto;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+
+        .family-card h3 {
+            color: #0879cf;
+            margin-bottom: 10px;
+        }
+
+        .family-card p {
+            color: #526987;
+            line-height: 1.6;
+        }
+
+        .gallery {
+            margin-top: 30px;
+            padding: 22px;
+            border: 1px solid #dce8f5;
+            border-radius: 7px;
+        }
+
+        .gallery h2 {
+            color: #0879cf; 
+         }
+
+        .gallery p {
+            color: #526987;
+            line-height: 1.6;
+        }
+
+        .family-gallery {
+            height: 85%;
+            width: 85%;
+            margin: 30px auto;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            list-style: none;
+        }
+
+        .family-gallery img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            border-radius: 20%;
+            border: 1px solid black;
+        }
+
+        .family-gallery li :hover {
+            box-shadow: 0 5px 15px #58a2f1;
+        }
+
+        footer {
+            background-color: #f4f7fb;
+            padding: 15px;
+            text-align: center;
+            color: #526987;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            
+            <h1>FAMILY TREE</h1>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="skills.html">Tech Skills</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="family.html">Family Tree</a></li>
+                <li><a href="activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="heading">
+        <h1>My Family</h1>
+        <p>Get to know the people who are part of my Life.</p>
+    </section>
+
+    <main class="container">
+
+        <h2>My Family Members</h2>
+
+        <section class="family">
+
+            <div class="family-card">
+                <div class="icon">&#128104;</div>
+                <h3>Father</h3>
+                <p>Name: Diosdado F. Pagulayan Jr.</p>
+                <p>Father</p>
+            </div>
+
+            <div class="family-card">
+                <div class="icon">&#128105;</div>
+                <h3>Mother</h3>
+                <p>Name: Ma. Grace B. Pagulayan</p>
+                <p>Mother</p>
+            </div>
+
+            <div class="family-card">
+                <div class="icon">&#129332;</div>
+                <h3>Me</h3>
+                <p>Name: Jhon Michael B. Pagulayan</p>
+                <p>First born</p>
+            </div>
+
+            <div class="family-card">
+                <div class="icon">&#129312;</div>
+                <h3>Brother</h3>
+                <p>Name: Jay B. Pagulayan</p>
+                <p>Second born</p>
+            </div>
+
+            <div class="family-card">
+                <div class="icon">&#128103;</div>
+                <h3>Sister</h3>
+                <p>Name: Chloe B. Pagulayan</p>
+                <p>Third born</p>
+            </div>
+
+            <div class="family-card">
+                <div class="icon">&#128120;</div>
+                <h3>Girlfriend</h3>
+                <p>Roxane Gonzales</p>
+                <p>My future wife</p>
+            </div>
+
+            <div class="family-card">
+                <div class="icon">&#129335;</div>
+                <h3>Auntie</h3>
+                <p>Rosanna Boiser</p>
+                <p>Closest Aunt</p>
+            </div>
+
+            <div class="family-card">
+                <div class="icon">&#129492;</div>
+                <h3>Uncle</h3>
+                <p>Mario Boiser</p>
+                <p>Closest Uncle</p>
+            </div>
+
+            <div class="family-card">
+                <div class="icon">&#129322;</div>
+                <h3>Cousin</h3>
+                <p>Ritchel Boiser</p>
+                <p>Closest Cousin</p>
+            </div>
+
+            <div class="family-card">
+                <div class="icon">&#129322;</div>
+                <h3>Cousin</h3>
+                <p>Jerald Boiser</p>
+                <p>Closest Cousin</p>
+            </div>
+
+            <div class="family-card">
+                <div class="icon">&#129322;</div>
+                <h3>Cousin</h3>
+                <p>Jeremy Boiser</p>
+                <p>Closest Cousin</p>
+            </div>
+
+            <div class="family-card">
+                <div class="icon">&#129313;</div>
+                <h3>Best Friend</h3>
+                <p>Dexter Deguzman</p>
+                <p>Friend since Childhood</p>
+            </div>
+
+            <div class="family-card">
+                <div class="icon">&#129333;</div>
+                <h3>Best Friend</h3>
+                <p>John Rene Deguzman</p>
+                <p>Friend since Childhood</p>
+            </div>
+
+        </section>
+
+        <section class="gallery">
+            <h2>Family Gallery</h2>
+            <p>Pictures with deep memories!</p>
+
+            <ul class="family-gallery">
+                <li><img src="1000126988.jpg" alt=" Picture 1"></li>
+                <li><img src="1000126985.jpg" alt=" Picture 2"></li>
+                <li><img src="1000126986.jpg" alt=" Picture 3"></li>
+                <li><img src="1000126987.jpg" alt=" Picture 4"></li>
+                <li><img src="1000126984.jpg" alt=" Picture 5"></li>
+                <li><img src="1000126990.jpg" alt=" Picture 6"></li>
+                <li><img src="1000126994.jpg" alt=" Picture 7"></li>
+            </ul>
+    </section>
+
+
+    <footer>
+        <p>Family Tree | Jhon Michael B. Pagulayan</p>
+    </footer>
+
+</body>
+</html>

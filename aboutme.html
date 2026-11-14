@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Jhon Michael</title>
+    <link rel="icon" href="iconall.png">
+
+    <style>
+        html {
+            scrollbar-gutter: stable;
+            overflow-y: overlay;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #1d2f49;
+            background-color: #ffffff;
+        }
+
+        header {
+            border-bottom: 5px solid #0879cf;
+        }
+
+        nav {
+            width: 85%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: #0879cf;
+            font-size: 22px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #405573;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            color: #cf0808;
+        }
+
+        .li {
+            color: #526987;
+        }
+
+        .heading {
+            background-color: #f4f9ff;
+            padding: 10px 7%;
+            text-align: center;
+        }
+
+        .heading h1 {
+            font-size: 45px;
+            color: #0879cf;
+            margin: 0;
+        }
+
+        .heading p {
+            color: #526987;
+            font-size: 18px;
+        }
+
+  
+        .container {
+            width: 85%;
+            margin: 40px auto;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+
+        .picture {
+            width: 280px;
+            height: 300px;
+            background-color: #e5f2ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            color: #0879cf;
+        }
+
+        .picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            border: solid black;
+            border-width: 5px;
+        }
+
+        .description {
+            flex: 1;
+        }
+
+        .description h2 {
+            color: #0879cf;
+            font-size: 30px;
+        }
+
+        .description p {
+            color: #526987;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+       
+        .details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .box {
+            border: 1px solid #dce8f5;
+            border-radius: 7px;
+            padding: 22px;
+        }
+
+        .box h2 {
+            color: #0879cf;
+            font-size: 22px;
+        }
+
+        .box p {
+            color: #526987;
+            line-height: 1.7;
+        }
+
+        .box pre {
+            color: #526987;
+            line-height: 1.7;
+        }
+
+        footer {
+            background-color: #f4f7fb;
+            padding: 15px;
+            text-align: center;
+            color: #526987;
+            font-size: 13px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+
+            <h1>ABOUT ME</h1>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="skills.html">Tech Skills</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="family.html">Family Tree</a></li>
+                <li><a href="activities.html">Activities</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="heading">
+
+        <h1>About Me</h1>
+
+        <p>Get to know more about my life and personality.</p>
+
+    </section>
+
+    <main class="container">
+
+        <section class="about">
+
+            <div class="picture">
+                <img src="1000126909.png" alt="My Profile Picture">
+            </div>
+
+            <div class="description">
+
+                <h2>WELCOME! </h2>
+
+                <p>
+                    Hello reader! thank you for clicking the section "About me"
+                </p>
+
+                <p>
+                    With you here take a look on things about myself, see if you could relate something similar too mine!
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="details">
+
+            <div class="box">
+                <h2>Personal Information</h2>
+                <p>Name: Jhon Michael B. Pagulayan</p>
+                <p>Nickname: Buboy</p>
+                <p>Age: 21</p>
+                <p>Birth Month: August 5</p>
+                <p>Location: Somewhere in Taguig City</p>
+                <p>Legal status: not officially married(yeah, i have a GF)</p>
+                <p>Ambition: I'm continously learning programming and web development,<br>to become independent Full stack developer.</p>
+            </div>
+
+            <div class="box">
+                <h2>My Hobbies</h2>
+                <p>i like playing strategy games mostly games that needed a logic.</p>
+                <p>Most favorite games:</p>
+                <ul class="li">
+                    <li>Minecraft redstone</li>
+                    <li>Chess</li>
+                    <li>Sudoku</li>
+                    <li>Mine sweeper</li>
+                </ul>
+
+                <p>I also like reading Manwhas/Manhuas</p>
+                <p>Most favorite series:</p>
+                <ul class="li">
+                    <li>Heavenly Demon Cultivation Simulation</li>
+                    <li>A wimp strategy guide</li>
+                    <li>Pick me up</li>
+                    <li>War of exticntion</li>
+                    <li>The gamer</li>
+                    <li>the max level player</li>
+                    <li>Nebula Civilization</li>
+                </ul>
+
+
+                <p>There is also things i love doing outside</p>
+                <ul class="li">
+                <li>Biking</li>
+                <li>Mountain Climbing</li>
+                <li>Badminton</li>
+                <li>Eating random food i see</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>My Interests</h2>
+                <p>I enjoy fixing things so i could learn something new and thats why i like playing strategy gamers, just something to make my brain work, and reading also i enjoyed learning random things.</p>
+            </div>
+
+            <div class="box">
+                <h2>My Motto in Life</h2>
+                <p>"He who do not have plan, are planning to fail."</p>
+                <p>i pick this because a life without a purpose or goal is just keeping self alive and not ALIVE.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>About Me | Jhon Michael B. Pagulayan</p>
+    </footer>
+
+</body>
+</html>

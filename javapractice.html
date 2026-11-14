@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Practice</title>
+</head>
+<body>
+    <pre>
+    import java.util.*;
+    import javax.swing.*;
+
+    public class HotelReservation {
+
+            // destination initialization
+        static String[] destinations = {
+            "Baguio", "Boracay", "El Nido", "Siargao",
+            "Hong Kong", "Japan", "Singapore", "South Korea"
+        };
+
+        static String[] roomType = {
+            "Standard", "Deluxe", "Quadruple", "Family", "Suite"
+        };
+        
+        // available bed every types of room
+        static int[] roomBeddings = {1, 2, 4, 6, 4};
+        static int[] availableRooms = {5, 4, 5, 3, 2};
+
+        // 2d array for local place
+        // row > Rates in: Lean, High, Peak, Super Peak
+        // column > room type
+        static double[][] localRates = {
+            {2000, 4000, 6000, 9000},
+            {3000, 5000, 8000, 12000},
+            {4000, 7000, 10000, 15000},
+            {5000, 9000, 12000, 18000},
+            {6000, 11000, 14000, 21000}
+        };
+
+        // 2d array for international place
+        // row > Rates in: Lean, High, Peak, Super Peak
+        // column > room type
+        static double[][] internationalRates = {
+            {2500, 4500, 6500, 10000},
+            {5000, 7000, 9000, 13000},
+            {7500, 9500, 11500, 16000},
+            {10000, 12000, 14000, 19000},
+            {12500, 14500, 16500, 22000}
+        };
+
+        // add-ons rates initialization
+        static double EXTRA_BED = 650;
+        static double BLANKET = 250;
+        static double PILLOW = 100;
+        static double TOILETRIES = 200;
+        
+        // amenities/services rates initialization
+        static double POOL = 300;
+        static double GYM = 500;
+        static double FOOT_SPA = 825;
+        static double FACIAL = 1045;
+        static double THAI_MASSAGE = 1540;
+        
+        public static void main(String[] args) {
+            // starter welcome messsage
+            JOptionPane.showMessageDialog(
+                null,
+                "Welcome to LanIya Star Hotel Reservation System!",
+                "LanIya Star Hotel",
+                JOptionPane.INFORMATION_MESSAGE
+            );
+
+            makeReservation();
+        }
+
+        public static void makeReservation(){
+            
+            int destination = chooseDestination();
+
+        }
+
+        // displaying a destination choices with another method inside for taking an input purposes
+        public static int chooseDestination() {
+
+            // displaying choices
+            String message = "CHOOSE YOUR DESTINATION\n\n";
+            for (int i = 0; i < destinations.length; i++) {
+                message += (i + 1) + ". " + destinations[i] + "\n";
+            }
+
+            JOptionPane.showMessageDialog(null, message);
+
+            // after displaying, will call another method for inputing
+            return inputInt(
+                "Enter destination number:",
+                1, destinations.length
+            ) - 1;
+        }
+
+        static int inputInt(String message, int minimum, int maximum) {
+            // looping so that it will run until it takes a right input
+            while (true) {
+                // using try and catch to not let the program crash if the user input completely wrong answer
+                try {
+                    int number = Integer.parseInt(input(message));
+
+                    if (number >= minimum && number <= maximum) {
+                        // automatically stop the loop
+                        return number;
+                    }
+                    // if user input low or high number compare to the choices
+                    JOptionPane.showMessageDialog(
+                        null,
+                        "Please enter a number from " + minimum + " to " + maximum + "."
+                    );
+                // if user did not input correct to what is needed
+                } catch (NumberFormatException e) {
+                    JOptionPane.showMessageDialog(
+                        null,
+                        "Invalid input. Please enter a whole number."
+                    );
+                }
+            }
+        }
+        // only for taking and returing a string
+        static String input(String message) {
+            String answer = JOptionPane.showInputDialog(
+                null,
+                message,
+                "LanIya Star Hotel",
+                JOptionPane.QUESTION_MESSAGE
+            );
+
+            // this will stop the program if the user presses Cancel.
+            if (answer == null) {
+                System.exit(0);
+            }
+            // removing unnecessary spaces in front and back that may result an error
+            return answer.trim();
+        }
+    }
+
+    </pre>
+</body>
+</html>

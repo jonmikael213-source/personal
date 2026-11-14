@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - Jhon Michael B. Pagulayan</title>
+    <link rel="icon" href="iconall.png">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #1d2f49;
+            background-color: #ffffff;
+        }
+
+        header {
+            border-bottom: 5px solid #0879cf;
+        }
+
+        nav {
+            width: 85%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: #0879cf;
+            font-size: 22px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #405573;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        nav a:hover { color: #cf0808; }
+
+        .heading {
+            background-color: #f4f9ff;
+            padding: 10px 7%;
+            text-align: center;
+        }
+
+        .heading h1 {
+            color: #0879cf;
+            font-size: 45px;
+            margin: 0;
+        }
+
+        .heading p {
+            color: #526987;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        .container h2 {
+            color: #0879cf;
+            font-size: 28px;
+        }
+
+        .activities {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 180px;
+            gap: 20px;
+        }
+        .activities a {
+            text-decoration: none;
+        }
+
+        .activity-card {
+            border: 1px solid #dce8f5;
+            border-radius: 7px;
+            padding: 22px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            height: 180px;
+        }
+
+        .activity-card:hover {
+            box-shadow: 0 5px 15px #dce8f5;
+        }
+
+        .icon {
+            background-color: #e5f2ff;
+            color: #0879cf;
+            width: 55px;
+            height: 55px;
+            min-width: 55px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+
+        .activity-info h3 {
+            color: #0879cf;
+            margin: 0 0 10px;
+        }
+
+        .activity-info p {
+            color: #526987;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #f4f7fb;
+            padding: 15px;
+            text-align: center;
+            color: #526987;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            
+            <h1>ACTIVITY LIST</h1>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="skills.html">Tech Skills</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="family.html">Family Tree</a></li>
+                <li><a href="activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="heading">
+        <h1>My Activities</h1>
+        <p>Here are some of my programming and website activities.</p>
+    </section>
+
+    <main class="container">
+
+        <h2>My Website Activities</h2>
+
+        <section class="activities">
+            <a href="Pagulayan_resume.html">
+            <div class="activity-card">
+                <div class="icon">&lt;/&gt;</div>
+                <div class="activity-info">
+                    <h3>Resume</h3>
+                    <p>The first time creating my own personal website using HTML as a beginner.</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="birthmonth.html">
+            <div class="activity-card">
+                <div class="icon">&#128197;</div>
+                <div class="activity-info">
+                    <h3>HTML Birthdate Calendar</h3>
+                    <p>Creating a calendar using HTML tables with CSS styling.</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="javapractice.html">
+            <div class="activity-card">
+                <div class="icon">&#128187;</div>
+                <div class="activity-info">
+                    <h3>Java Programming</h3>
+                    <p>Practicing Java programming, methods, arrays, and loops.</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="iconall.png">
+            <div class="activity-card">
+                <div class="icon">&#127912;</div>
+                <div class="activity-info">
+                    <h3>Icon Design</h3>
+                    <p><strong>Icon design i made with my little sister assistance.</strong></p>
+                </div>
+            </div>
+            </a>
+
+            <a href="htmlpractice.html">
+            <div class="activity-card">
+                <div class="icon">&#128221;</div>
+                <div class="activity-info">
+                    <h3>HTML Practice</h3>
+                    <p>Practicing HTML elements, links, images, tables and others soon to be used.</p>
+                </div>
+            </div>
+            </a>
+
+            <div class="activity-card">
+                <div class="icon">&#127891;</div>
+                <div class="activity-info">
+                    <h3>Soon Activities</h3>
+                    <p>Soon to be added activities.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Activities | Jhon Michael B. Pagulayan</p>
+    </footer>
+
+</body>
+</html>
